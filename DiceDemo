@@ -1,0 +1,24 @@
+public static void main(String[]args)
+    {
+        //Scanner object
+        Scanner k = new Scanner(System.in);
+        
+        //variables
+        int Dice1;
+        int Dice2;
+        
+        //header
+        System.out.println("\"Roll Em'\" Dice Game(DiceDemo) - Praneel Pothukanuri");
+        System.out.println("==========================================");;
+        
+        //Dice object
+        Dice d = new Dice();
+        
+        //Rolling the dice...
+        Dice1 = d.getRandomNumber();
+        Dice2 = d.getRandomNumber();
+        
+        //output
+        System.out.println(d.getNickname(Dice1, Dice2));
+    }
+}

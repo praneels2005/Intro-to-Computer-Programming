@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+public class DiceDB
+{
+   public static void main(String[]args)
+    {
+        //variables
+        int Dice1;
+        int Dice2;
+        
+        //header
+        JOptionPane.showMessageDialog(null, "\"Roll Em'\" Dice Game - Praneel Pothukanuri", "DiceDB", 1);
+        
+        //Dice object
+        Dice d = new Dice();
+        
+        //Rolling the dice...
+        Dice1 = d.getRandomNumber();
+        Dice2 = d.getRandomNumber();
+        
+        //output
+        JOptionPane.showMessageDialog(null, d.getNickname(Dice1, Dice2), "DiceDB", 1);
+    }
+}

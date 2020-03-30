@@ -1,0 +1,204 @@
+import java.util.Random;
+public class Dice
+{
+    //fields
+    
+    private int total;
+    private String nickname;
+
+    //random object
+    Random r = new Random();
+
+    //no-arg constructor
+    public Dice()
+    {
+        
+    }
+
+    public int getRandomNumber()
+    {
+        return (r.nextInt(6)+1);
+        
+    }
+
+    public int getTotal(int Dice1, int Dice2)
+    {
+        total = Dice1 + Dice2;
+
+        return total;
+    }
+
+    public String getNickname(int Dice1, int Dice2)
+    {
+        switch(Dice1)
+        {
+            case 1:
+            if(Dice2 == 1)
+            {
+                return "1 AND 1 \nTotal = 2 \nStickman says... \"Doubles... Snake eyes\"";
+            }
+            else if(Dice2 == 2)
+            {
+                return "1 AND 2 \nTotal = 3 \nStickman says... \"Acey-Deucey\"";
+            }
+            else if(Dice2 == 3)
+            {
+                return "1 AND 3 \nTotal = 4  \nStickman says... \"Easy four\"";
+            }
+            else if(Dice2 == 4)
+            {
+                return "1 AND 4 \nTotal = 5 \nStickman  says...\"Fever five\"";
+            }
+            else if(Dice2 == 5)
+            {
+                return "1 AND 5 \nTotal = 6 \nStickman says...\"Easy six\"";
+            }
+            else if(Dice2 == 6)
+            {
+                return "1 AND 6 \nTotal = 7 \nStickman says... \"Six ace, end of the race\"";
+            }
+            break;
+
+            case 2:
+       	     if(Dice2 == 1)
+            {
+                return "2 AND 1 \nTotal = 3 \nStickman says... \"Acey Deucey\"";
+            }
+            else if(Dice2 == 2)
+            {
+                return "2 AND 2 \nTotal = 4 \nStickman says... \"Doubles... Ballerina and hard four\"";
+            }
+            else if(Dice2 == 3)
+            {
+                return "2 AND 3 \nTotal = 5 \nStickman says... \"Fever five\"";
+            }
+            else if(Dice2 == 4)
+            {
+                return "2 AND 4 \nTotal = 6 \nStickman says...\"Easy Six\"";
+            }
+            else if(Dice2 == 5)
+            {
+                return "2 AND 5 \n Total = 7 \nStickman says... \"Seven Out\"";
+            }
+            else if(Dice2 == 6)
+            {
+                return "2 AND 6 \nTotal = 8 \nStickman says... \"Easy Eight\"";
+            }
+            break;
+            
+            case 3:
+            if(Dice2 == 1)
+            {
+                return "3 AND 1 \nTotal = 4 \nStickman says... \"Easy Four\"";
+            }
+            else if(Dice2 == 2)
+            {
+                return "3 AND 2 \nTotal = 5 \nStickman says... \"Fever Five\"";
+            }
+            else if(Dice2 == 3)
+            {
+                return "3 AND 3 \nTotal = 6 \nStickman says... \"Doubles... Brooklyn Forest and Hard Six\"";
+            }
+            else if(Dice2 == 4)
+            {
+                return "3 AND 4 \nTotal = 7 \nStickman says...\"Front Line Winner, Back Line Skinner\"";
+            }
+            else if(Dice2 == 5)
+            {
+                return "3 AND 5 \n Total = 8 \nStickman says... \"Easy Eight\"";
+            }
+            else if(Dice2 == 6)
+            {
+                return "3 AND 6 \nTotal = 9 \nStickman says... \"Nina\"";
+            }
+            break;
+            
+            case 4:
+            if(Dice2 == 1)
+            {
+                return "4 AND 1 \nTotal = 5 \nStickman says... \"Fever Five\"";
+            }
+            else if(Dice2 == 2)
+            {
+                return "4 AND 2 \nTotal = 6 \nStickman says... \"Easy Six\"";
+            }
+            else if(Dice2 == 3)
+            {
+                return "4 AND 3 \nTotal = 7 \nStickman says... \"Line Away\"";
+            }
+            else if(Dice2 == 4)
+            {
+                return "4 AND 4 \nTotal = 8 \nStickman says...\"Doubles... Hard Eight and Square Pair\"";
+            }
+            else if(Dice2 == 5)
+            {
+                return "4 AND 5 \n Total = 9 \nStickman says... \"Nina\"";
+            }
+            else if(Dice2 == 6)
+            {
+                return "4 AND 6 \nTotal = 10 \nStickman says... \"Easy ten\"";
+            }
+            break;
+            
+            case 5:
+            if(Dice2 == 1)
+            {
+                return "5 AND 1 \nTotal = 6 \nStickman says... \"Easy Six\"";
+            }
+            else if(Dice2 == 2)
+            {
+                return "5 AND 2 \nTotal = 7 \nStickman says... \"Six one, you're all done\"";
+            }
+            else if(Dice2 == 3)
+            {
+                return "5 AND 3 \nTotal = 8 \nStickman says... \"Easy Eight\"";
+            }
+            else if(Dice2 == 4)
+            {
+                return "5 AND 4 \nTotal = 9 \nStickman says...\"Nina\"";
+            }
+            else if(Dice2 == 5)
+            {
+                return "5 AND 5 \n Total = 10 \nStickman says... \"Doubles... Puppy Paws and Hard Ten\"";
+            }
+            else if(Dice2 == 6)
+            {
+                return "5 AND 6 \nTotal = 11 \nStickman says... \"Yo-leven\"";
+            }
+            break;
+            
+            case 6:
+            if(Dice2 == 1)
+            {
+                return "6 AND 1 \nTotal = 7 \nStickman says... \"Seven's a bruiser, The Front Line's a Loser\"";
+            }
+            else if(Dice2 == 2)
+            {
+                return "6 AND 2 \nTotal = 8 \nStickman says... \"Easy 8\"";
+            }
+            else if(Dice2 == 3)
+            {
+                return "6 AND 3 \nTotal = 9 \nStickman says... \"Nina\"";
+            }
+            else if(Dice2 == 4)
+            {
+                return "6 AND 4 \nTotal = 10 \nStickman says...\"Easy ten\"";
+            }
+            else if(Dice2 == 5)
+            {
+                return "6 AND 5 \n Total = 11 \nStickman says... \"Yo-leven\"";
+            }
+            else if(Dice2 == 6)
+            {
+                return "6 AND 6 \nTotal = 12 \nStickman says... \"Boxcars\"";
+            }
+            break;
+            
+            default:
+            return("ERROR - try again");
+            
+        }
+            return "";
+        
+    }
+}
